@@ -1,0 +1,40 @@
+ <!DOCTYPE html>
+ <html>
+<head>ok</head>
+    
+<body>
+    <h1><u>Hello World</u>  </h1> 
+    <br>
+    hi
+    <h2 style="color:blue;background-color:#00ff00;border-color: black;border-style: dotted;">goal</h2>
+    <img src=messi.jpeg>
+    <br>
+    <a href="https://www.google.com/search?sca_esv=a98a0e038bdd91cc&sca_upv=1&sxsrf=ADLYWILk03CslFH53MBx0NdT1CFEmjiOeQ:1727514838513&q=how+to+add+hyperlink+in+html&udm=2&fbs=AEQNm0DPvcmG_nCbmwtBO9j6YBzM68ZanC7g01Skprhw5JoufUv28nkH7BlZuPSVPZEeFf4zEsryEwMB77hXASo0GX6kPw21UBtA3h0h83flITUNYOu9JBxa3C6GnoUPMVpviphuuho4tUAIUO4r7zASzftfLyJVbOzVDhz6wJZU42ReKu505VIMFWPnaRd4dDPaHaYs9MyIC3ux4svL9nqLaUdk6iJHfw&sa=X&ved=2ahUKEwi9v6yipuWIAxVHnq8BHa45Du8QtKgLegQIGhAB&biw=640&bih=686&dpr=1.25" target = "_blank">dont click this</a>
+    <br>
+    <br>
+    <br>
+    <canvas width = "600" height="600"; style="box-shadow: blue 1px 1px 10px 10px">
+
+    </canvas>
+
+    <script>
+        function draw(){
+        let canvas = document.querySelector('canvas');
+        console.log(canvas);
+        let ctx = canvas.getContext('2d');
+        let x = Math.random()*600;
+        let y = Math.random()*600;
+        let w = Math.random()*100;
+        let h = Math.random()*100;
+        let r = Math.random()*255;
+        let g = Math.random()*255;
+        let b = Math.random()*255;
+        ctx.fillStyle = `rgb(${r},${g},${b})`;
+        ctx.fillRect(x,y,w,h,r,g,b);
+
+        requestAnimationFrame(draw)
+        }
+    requestAnimationFrame(draw)
+    </script>
+</body>
+ </html>
